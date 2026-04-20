@@ -54,6 +54,66 @@ Every case follows this architecture:
 - Exhibit titles should be descriptive
 - Number exhibits sequentially
 
+## Figure Generation
+
+Use the plotting script to create professional figures:
+
+```bash
+python scripts/case_plots.py
+```
+
+### Available Plot Types
+
+| Function | Use Case | Example |
+|----------|----------|---------|
+| `plot_time_series` | Trends over time | Stock prices, deposits, rates |
+| `plot_bar_chart` | Comparisons | Revenue by segment, market share |
+| `plot_stacked_bar` | Composition | Asset allocation, cost breakdown |
+| `plot_pie_chart` | Proportions | Deposit composition, market share |
+| `plot_dual_axis` | Two metrics | Price and volume, rates and deposits |
+| `plot_comparison_bars` | Peer comparison | SVB vs competitors |
+
+### Figure Style
+
+All figures use professional HBS-style formatting:
+- Clean white background with subtle grid
+- Bold titles and axis labels
+- Professional color palette
+- High DPI (300) for print quality
+- No top/right spines
+
+### Creating Figures
+
+When writing a case, generate figures by:
+
+1. **Identify key data** — What numbers tell the story?
+2. **Choose plot type** — Time series for trends, bars for comparisons, pie for proportions
+3. **Run the script** — Modify `case_plots.py` with your data
+4. **Save to case folder** — Output to `{case_folder}/figures/`
+
+### Example: SVB Case Figures
+
+```python
+# Figure 1: Deposit Growth
+plot_time_series(
+    dates=dates,
+    values=deposits,
+    title='SVB Total Deposits (2018-2022)',
+    ylabel='Deposits ($ Billions)',
+    filename='exhibit_deposits.png',
+    show_values=True
+)
+
+# Figure 2: Uninsured Deposits
+plot_pie_chart(
+    labels=['Uninsured (>$250K)', 'Insured (<$250K)'],
+    values=[94, 6],
+    title='SVB Deposit Insurance Status',
+    filename='exhibit_uninsured.png',
+    colors=['#d62728', '#2ca02c']
+)
+```
+
 ## Financial Data Collection
 
 When building a case, gather:

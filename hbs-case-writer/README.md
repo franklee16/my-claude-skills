@@ -43,6 +43,8 @@ Create a teaching case on spot Bitcoin ETFs
 ```
 hbs-case-writer/
 ├── SKILL.md                      # Main skill instructions
+├── scripts/
+│   └── case_plots.py            # Figure generation (matplotlib)
 ├── references/
 │   ├── hbs-patterns.md          # Detailed patterns from real HBS cases
 │   └── financial-data-sources.md # Where to find financial data
@@ -54,7 +56,27 @@ hbs-case-writer/
 
 The skill produces:
 1. **Case document** — Full narrative with exhibits
-2. **Teaching note** (optional) — Learning objectives, discussion questions, teaching plan
+2. **Figures** — Professional publication-quality charts (PNG, 300 DPI)
+3. **Teaching note** (optional) — Learning objectives, discussion questions, teaching plan
+
+## Figure Generation
+
+Generate professional figures for your case:
+
+```bash
+python scripts/case_plots.py
+```
+
+### Available Plot Types
+
+| Function | Use Case |
+|----------|----------|
+| `plot_time_series` | Trends over time (deposits, stock prices) |
+| `plot_bar_chart` | Comparisons (revenue by segment) |
+| `plot_stacked_bar` | Composition (asset allocation) |
+| `plot_pie_chart` | Proportions (market share) |
+| `plot_dual_axis` | Two metrics (price and volume) |
+| `plot_comparison_bars` | Peer comparisons |
 
 ## Example
 
