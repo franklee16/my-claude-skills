@@ -1,0 +1,57 @@
+% Editor letter — LaTeX conversion target for rr-response (drafted LAST, after all referee letters).
+% Derived from the RFS ETFcomove response_to_editor.tex (letter class + hand-rolled bibliography stub).
+% Mirrors the decision letter point-for-point (strategy §7.4). The arbitration sentence appears
+% IDENTICALLY in every referee letter and near-identically here.
+\documentclass[12pt]{letter}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,setspace,microtype}
+\usepackage{booktabs,array,longtable,pdflscape}
+
+% letter class has no bibliography — hand-rolled stub (load-bearing):
+\newenvironment{thebibliography}[1]{}{}
+\providecommand{\refname}{References}
+\providecommand{\newblock}{}
+\usepackage[authoryear,round]{natbib}
+\renewcommand{\bibsection}{\par\addvspace{1ex}\noindent\textbf{References}\par\nopagebreak}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+\setlength{\emergencystretch}{2em}
+
+\begin{document}
+
+\begin{letter}{[Editor name / journal]}
+
+\opening{Dear [Editor],}
+
+% SRC: style §5.1 — gratitude opener template verbatim
+[Gratitude for the decision letter and the referees' reports; one-sentence summary of the revision effort.]
+
+% Mirror the decision letter's structure point-for-point. Quote the paper's contribution
+% paragraph (identical to the one in every referee letter — one controlled narrative, P7).
+[Point 1 of the decision letter addressed — quote it, then respond.]
+
+\begin{quote}\itshape
+[Editor's point, verbatim]
+\end{quote}
+
+\textbf{Response:} [Reply with pointers to the referee-letter responses; cross-reference rather than duplicate.]
+
+% Referee conflicts: disclose, do not hide; state the common-ground resolution; the identical
+% arbitration sentence from the referee letters appears here near-verbatim (strategy §7.3).
+
+\closing{[Closing ritual — style §9.10 template],\\ The authors}
+
+\end{letter}
+
+% References for works newly cited in this letter only:
+\begin{spacing}{1}
+\bibliographystyle{mystyle}
+\bibliography{ref}
+\end{spacing}
+
+\end{document}

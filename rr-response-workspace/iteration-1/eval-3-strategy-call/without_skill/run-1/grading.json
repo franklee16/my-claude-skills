@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Removal of the portfolio-sorting section is rejected or warned against (cutting the referee's requested reconciliation evidence is identified as a failure move)",
+      "passed": true,
+      "evidence": "Section 1 'The Call': '**Reconcile. Run the replication grid. Do not remove the section.**' Section 4: '1. **It is the documented failure move.** Rule 9 / Red Line 3: never cut the referee's requested evidence to escape a reconciliation demand — it converts a results question into a trust question.' Section 8 red line: 'No removal of the section while the reconciliation is unrun.'"
+    },
+    {
+      "text": "The recommendation prescribes a reconciliation protocol: reduce the disagreement to named specification/measurement axes and replicate Zhang (2022) in his exact specification, then compare",
+      "passed": true,
+      "evidence": "Step 0: 'Read Zhang (2022) exactly. Extract: attention measure construction, sample period, universe filters, weighting, sort horizon.' Step 1: 'Replicate Zhang's result in his exact specification, on his measure and sample as closely as public data permits.' Step 2: 'Walk the grid from his specification to ours, one axis at a time' with named axes (IO composition; VW vs. EW weighting; attention measure; sample period; sort horizon/portfolio count)."
+    },
+    {
+      "text": "The user's belief that 'Zhang doesn't apply' is channeled into demonstrated measurement/specification differences - the recommendation never endorses asserting that Zhang is wrong",
+      "passed": true,
+      "evidence": "Section 2: 'An unevidenced belief set against a documented premise, sent as prose, loses... arguments lose, tables win (Rule 2)' and 'The letter can never carry \"Zhang's setting differs from ours\" as a hand-wave. It can carry \"the sign difference is attributable to [a named axis]\" with a table behind it.' Section 8 red line: 'No \"Zhang's result doesn't apply to our sample\" as prose assertion'; contingency table: 'the \"referee is wrong\" sentence never appears anywhere.'"
+    },
+    {
+      "text": "The recommendation notes that no reconciliation analysis has been run yet (changelog: Not Started), so either the analysis must run first or the letter needs explicit placeholders",
+      "passed": true,
+      "evidence": "Section 1: 'the information that could justify it does not exist yet — the changelog records that no replication or grid has been run.' Section 7 'Letter discipline': 'The letter cites only Completed items with actual pointers (changelog rule). The grid must reach Completed before the letter references it. If the timeline slips, the letter ships later with the grid in it' — analysis-first, satisfying the disjunction."
+    },
+    {
+      "text": "No letter is drafted - the output is a decision recommendation (the task asked 'what should we do', not for drafting)",
+      "passed": true,
+      "evidence": "Document is titled 'Strategy Call — Comment 2' with decision-memo sections (The Call / Pushback on the Working Hypothesis / Triage / Why Removal Fails / The Plan / Contingency / Internal Audit / Red Lines / Bottom line). No referee-addressed letter body; the synthesis sentence appears only as a template with a placeholder: 'Overall, the comparison suggests that the difference between our paper and Zhang (2022) is mainly attributable to [axis].'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

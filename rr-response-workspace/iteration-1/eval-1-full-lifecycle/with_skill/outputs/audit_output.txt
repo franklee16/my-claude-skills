@@ -1,0 +1,12 @@
+Letter: C:/Users/frank/.claude/skills/rr-response-workspace/iteration-1/eval-1-full-lifecycle/with_skill/outputs/letter_referee_1.md  (6 comment blocks, 6 response blocks)
+  [PASS  ] forbidden phrases
+  [PASS  ] evaluative discounting
+  [PASS  ] scope-declaration
+  [REVIEW] placeholders — 24 unresolved: ['[Section ?, p. ? — CONFIRM; results TBD]', '[results TBD]', '[results TBD]', '[premise results TBD]', '[results TBD]', '[discriminator outcomes TBD]', '[Section ?, p. ? — CONFIRM]', '[results TBD]']
+  [PASS  ] [P#] tag leakage
+  [PASS  ] verbatim comment diff — 6 blocks matched (>=0.98)
+  [PASS  ] gratitude opener per response — 6 blocks OK
+  [PASS  ] pointer per response — 6 blocks OK
+  [PASS  ] escape-hatch heuristic — no unmatched declines among 6 blocks
+
+0 FAIL, 1 REVIEW-needed

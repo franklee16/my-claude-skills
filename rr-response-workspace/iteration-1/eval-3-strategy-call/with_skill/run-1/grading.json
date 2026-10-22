@@ -1,0 +1,35 @@
+{
+  "expectations": [
+    {
+      "text": "Removal of the portfolio-sorting section is rejected or warned against (cutting the referee's requested reconciliation evidence is identified as a failure move)",
+      "passed": true,
+      "evidence": "'The call' section: '**Reconcile, using the §4.3 Replication Grid. Do not remove the section. Reconciliation is mandatory work either way**'. Section 'Why removal fails (four independent grounds)': '1. **It is the documented failure move.** [P8] deleted the section its referee asked to have reconciled... the round-2 verdict quoted it back as \"leaving the revised draft presenting a less-than-complete picture\"'. Triage hard gates: 'Removal trips the \"cut evidence the referee asked to see reconciled\" gate — forbidden (red line 3).'"
+    },
+    {
+      "text": "The recommendation prescribes a reconciliation protocol: reduce the disagreement to named specification/measurement axes and replicate Zhang (2022) in his exact specification, then compare",
+      "passed": true,
+      "evidence": "Reconcile path step 2: '**Pin the axes.** Reduce the disagreement to named specification axes' with named candidates (attention measure construction; sample period; horizon/holding period; universe and filters; portfolio construction/weighting). Step 3: 'Replicate Zhang panel-by-panel in his exact specification on our sample, before defending anything of ours.' Step 4: 'Run the full grid. Both measures × horizons × sample periods (× universe variants as pinned).'"
+    },
+    {
+      "text": "The user's belief that 'Zhang doesn't apply' is channeled into demonstrated measurement/specification differences - the recommendation never endorses asserting that Zhang is wrong",
+      "passed": true,
+      "evidence": "'Frank's belief — \"Zhang's result doesn't apply to our sample\" — is admissible as a *hypothesis* and inadmissible as a *letter sentence*. ... Demonstrated by a replication grid, it is the answer. Arguments lose; tables win (strategy Rule 2). The grid converts your belief into a named specification axis with a coefficient and a t-stat.' Escalation-gate check: 'the grid path requires no statement that the referee is wrong — the grid speaks' and 'Do not let that sentence into any draft.' Synthesis framed as 'shown, never claimed.'"
+    },
+    {
+      "text": "The recommendation notes that no reconciliation analysis has been run yet (changelog: Not Started), so either the analysis must run first or the letter needs explicit placeholders",
+      "passed": true,
+      "evidence": "'Status check: changelog marks C2 \"Not Started.\" The letter may claim only Completed changes, so the grid is the gating work item for this comment's entire response.' Plan row: 'Change status: Not Started (changelog) — grid gates all claims'. Next actions order drafting last: '(5) only then draft the C2 response' — analysis-first, satisfying the disjunction."
+    },
+    {
+      "text": "No letter is drafted - the output is a decision recommendation (the task asked 'what should we do', not for drafting)",
+      "passed": true,
+      "evidence": "Document is titled 'Strategy Recommendation — R1-C2' with decision sections (The call / Triage basis / Why removal fails / Reconcile path / Contingencies / Phase 2 plan row / Next actions). No referee-addressed letter body; the only letter-like sentences are quoted templates with placeholders ('Overall, the above comparison suggests that the difference... is mainly caused by [axis]'), explicitly deferred: 'only then draft the C2 response — opening per style §4(c), closer per the... template.'"
+    }
+  ],
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "total": 5,
+    "pass_rate": 1.0
+  }
+}

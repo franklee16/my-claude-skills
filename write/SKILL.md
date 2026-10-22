@@ -59,6 +59,8 @@ Before presenting the draft:
 - [ ] No banned hedging phrases
 - [ ] Notation consistent throughout
 - [ ] All tables/figures referenced actually exist in `paper/tables/` or `paper/figures/`
+- [ ] Economic significance stated alongside statistical significance (magnitudes in interpretable units)
+- [ ] At least one analogy, mechanism story, or consistency argument accompanies main quantitative results
 
 #### 5. Present to User
 

@@ -1,0 +1,55 @@
+# Extracted Referee Comments
+
+Source: `referee_report_R1.txt` — extracted 2026-10-21 by `extract_comments.py`
+
+<!-- VERBATIM GATE: confirm every comment below against the source document before
+     triage. The letter's italic blocks must be copied from this file, never
+     re-extracted. Extraction can mangle two-column PDFs, ligatures, and nesting. -->
+
+## Referee 1
+
+### R1-C1
+
+Report of Referee 1
+Manuscript: "Retail Attention and the Cross-Section of Stock Returns"
+Journal of Financial and Quantitative Analysis — MS# 26-10442
+
+### R1-C2
+
+[General Assessment]
+
+
+The manuscript asks whether investor attention, measured from retail brokerage app activity, predicts the cross-section of stock returns. The question is reasonable and the data are unusual and interesting. My main concern, developed in Comment 1, is that the attention measure may not be measuring attention at all. The empirical section also contains an internal tension (Comment 2) and a subsample result that the authors need to explain (Comment 3). I list two minor points at the end.
+
+### R1-C3
+
+[Major Comments]
+
+### R1-C4 [original numbering: 1]
+
+1. Throughout the paper, the "ATTN" measure is constructed from daily app openings per stock. But app openings rise when trading volume rises, and Wang (2021, JF) shows that returns to liquidity provision — rebalancing activity by market makers around high-volume days — generate substantial return predictability on its own. In other words, your measure may simply be picking up liquidity-provision returns rather than attention-driven mispricing. If both mechanisms are at work, your headline result does not establish that attention matters. Please provide evidence that ATTN has stand-alone predictive content beyond liquidity-provision returns.
+
+### R1-C5 [original numbering: 1a]
+
+1a. On a related note, the sample ends in December 2022. The 2023-2024 period saw several attention episodes that would sharpen your tests. Extending the sample would help, though I leave this to the authors.
+
+### R1-C6 [original numbering: 2]
+
+2. Table 3 of the paper reports that high-ATTN portfolios UNDERPERFORM low-ATTN portfolios by roughly 40 bps per month, which the authors interpret as attention-driven overpricing. This directly contradicts Zhang (2022, JFE), who finds that retail attention is associated with HIGHER subsequent returns on essentially the same stock universe, using the same CRSP/Compustat filters you describe in Section 2. Two papers using the same data cannot both be right about the sign. Please reconcile your Table 3 with Zhang (2022), or remove the portfolio-sorting section from the paper.
+
+### R1-C7 [original numbering: 3]
+
+3. Here is what bothers me most. The paper's story is that retail attention drives mispricing. But retail investors cannot move prices in stocks dominated by institutions. If your mechanism were real, the predictability should disappear in the high-institutional-ownership subsample — and unless I am misreading your Table 5, that is exactly what happens: the long-short spread is insignificant there. Doesn't this contradict your story? Relatedly, even in the full sample the spread of 31 bps per month is tiny — the annual turnover of this strategy would not cover its transaction costs. Please answer directly, and justify the economic magnitude of your findings.
+
+### R1-C8
+
+[Minor Comments]
+
+### R1-C9 [original numbering: 4]
+
+4. Page 12, second paragraph: "the their attention measure" — typo.
+
+### R1-C10 [original numbering: 5]
+
+5. The paper should cite Wang (2021) and Zhang (2022) when discussing the related literature in the Introduction; the current draft engages neither.
+

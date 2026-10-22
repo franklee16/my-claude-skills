@@ -170,6 +170,9 @@ and proposed revisions.
 - [ ] **Straw Men**: Are opposing views fairly characterised?
 - [ ] **Circular Reasoning**: Does the paper assume what it's trying to prove?
 - [ ] **Overgeneralisation**: Do the conclusions go beyond what the evidence supports?
+- [ ] **Economic Significance**: Are results discussed in economic units and magnitudes, not just p-values?
+- [ ] **Metaphor Transparency**: Are core theoretical terms (e.g., "frictions," "spillovers," "contagion") used as metaphors with acknowledged limits, not as axioms?
+- [ ] **Warrant Diversity**: Does the argument rely solely on statistical tests, or does it include at least one analogy, mechanism story, case, or consistency argument?
 
 **Common Argumentation Problems in Finance Papers:**
 - Claiming causality when you have correlation
@@ -202,6 +205,7 @@ and proposed revisions.
 - [ ] **Informal Language**: Colloquialisms, contractions
 - [ ] **First Person Consistency**: "We" vs "I" vs passive
 - [ ] **Tense Consistency**: Present for claims, past for what was done
+- [ ] **Scientistic Masking**: Passive or impersonal constructions ("it is shown," "the data prove") that hide the author's judgment. Replace with owned claims ("we show," "the evidence suggests").
 
 ### Finance-Specific Style Issues
 

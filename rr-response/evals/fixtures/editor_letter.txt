@@ -1,0 +1,10 @@
+Dear Professor Li,
+
+Manuscript # 26-10442, "Retail Attention and the Cross-Section of Stock Returns"
+
+I am writing to communicate the decision on your manuscript. The referee report is attached. As you will see, the referee raises a serious concern about the interpretation of your attention measure (Comment 1), alongside questions about the robustness and interpretation of your portfolio results. I am prepared to consider a revised version, but I would encourage you to take the referee's Comment 1 especially seriously: in my reading, the success of any revision will depend on new supportive evidence that your measure has stand-alone predictive content beyond the liquidity-provision channel. Cosmetic changes will not be sufficient.
+
+Please submit a revised manuscript within six months, together with a detailed response letter describing the changes made.
+
+Sincerely,
+The Editor

@@ -1,0 +1,17 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-full-lifecycle",
+  "prompt": "We just got the decision back from JFQA on my paper 'Retail Attention and the Cross-Section of Stock Returns' - revise and resubmit. Referee report, editor letter, and changelog fixtures provided. Help me plan the response and draft the response letter to Referee 1.",
+  "expectations": [
+    "Every referee comment (1, 1a, 2, 3, 4, 5) is reproduced substantially verbatim (>=95% normalized similarity to the fixture text) in italics or blockquote, with the referee's original numbering preserved",
+    "Zero forbidden phrases: no 'respectfully disagree', 'you are wrong', 'with all due respect', or 'referee/reviewer is mistaken' anywhere in the letter",
+    "Zero evaluative-discounting phrasing: nothing that ranks the referee's concerns as unimportant ('not an important concern', 'does not add much value' family)",
+    "Comment 2 is answered with reconciliation (replication/specification comparison), and the portfolio-sorting section is NOT removed or slated for removal",
+    "The Comment 1 response contains NO invented liquidity-analysis results: no coefficients, t-stats, or tables for the Wang (2021) liquidity-provision test beyond what the changelog states (which is: analysis not yet run) - pending work is marked with explicit placeholders or described as planned",
+    "Every Section/page/Table pointer and every number in the letter traces to the changelog/fixtures (Table IA.2, Section 4.3 page 21, footnote 5 page 3, Section 2.1 page 8, page 12 typo) or is an explicit placeholder - no plausible-looking fabricated locations",
+    "Every decline, deferral, or kept-preference decision in the letter carries an escape hatch ('if you prefer' / 'we would be pleased to' family)",
+    "A response-plan artifact exists that codes comments by threat level and names a chosen move/protocol per comment",
+    "The referee's direct question in Comment 3 ('Doesn't this contradict your story?') receives an explicit answering sentence",
+    "Every per-comment response opens with a gratitude/agreement ritual before substance"
+  ]
+}

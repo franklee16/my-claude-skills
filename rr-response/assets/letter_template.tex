@@ -1,0 +1,101 @@
+% Response letter — LaTeX conversion target for rr-response (default draft format is Markdown).
+% Derived from the RFS ETFcomove referee letters (Weikai Li's attested format).
+% Ritual slots carry "% SRC:" pointers — copy the phrasing VERBATIM from references/style.md,
+% adapting only the bracketed substance. Never invent phrasings.
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,setspace,microtype}
+\usepackage{booktabs,array,longtable,pdflscape}
+\usepackage[authoryear,round]{natbib}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+\setlength{\emergencystretch}{2em}
+\newcommand{\nothing}[1]{{}}   % on/off wrapper for appendix material
+
+\begin{document}
+
+\setstretch{1.5}
+
+% ===== TITLE BLOCK (style §2 block 1) =====
+\begin{center}
+    \underline{\textbf{Response to Referee [N]'s Comments}}
+    \par\medskip
+    \textit{[Manuscript Title]}
+    \par ([Journal MS \#])
+    % \par [Date]   % include when journal convention expects it
+\end{center}
+
+% ===== OPENING FRAMING (style §2 block 3; §5.1 for phrasing) =====
+% Beats: (a) gratitude — (b) improvement claim — (c) italics-and-response convention announced.
+% Optional: global changes beyond the point-by-point (footnote, P7 pattern).
+% SRC: style §5.1 — copy opener template verbatim
+We are grateful for your insightful and constructive comments, [IMPROVEMENT CLAIM]. Below, we present your comments in italics, followed by our responses.\footnote{[Global changes beyond the point-by-point responses, if any — e.g., sample extension, notation change.]}
+
+% ===== SUMMARY OF MAJOR CHANGES (style §2 block 4 — heavy revisions only) =====
+% Ordered to mirror the acceptance condition (strategy §2 Pass 1, §7.1).
+% Frame items as adoptions, not defenses: (a) what the referee asked + (b) what was done + (c) pointer.
+\textbf{Summary of major changes in this version of the paper:}
+\begin{enumerate}
+    \item [Change 1 — ask, action, pointer]
+    \item [Change 2 — ask, action, pointer]
+\end{enumerate}
+
+% ===== PER-COMMENT LOOP (style §2 block 6; follow the referee's OWN ordering/numbering) =====
+% Preserve the referee's numbering exactly via \setcounter{enumi}{<N-1>}; keep nested structure.
+% Response label: bold "Response:" (this template) OR plain prose (majority default, style §8.3) —
+% pick ONE convention per letter and stay consistent.
+\begin{enumerate}
+    \setcounter{enumi}{0}   % = comment 1
+    \item \textit{[Referee comment VERBATIM, copied from comments_extracted.md — never re-extracted]}
+\end{enumerate}
+
+% SRC: style §5.1/§5.2 — gratitude ritual + action bridge templates
+% Four-beat reply: (1) thanks/agreement (2) why the point matters (3) action or new evidence
+% (4) manuscript or R-table pointer. Numbers carry t-stats inline; magnitudes carry benchmarks.
+\textbf{Response:} [Reply.]
+
+% Pasting revised manuscript prose as proof of completion (style §7.8):
+\begin{quote} \vspace{-2ex}
+    ``[Revised manuscript text, verbatim]'' \vspace{-2ex}
+\end{quote}
+
+% Repeat the loop per comment. Multi-part replies: "First, … Second, … Finally, …";
+% land takeaways with "Overall, …" (style §8.2).
+
+% ===== CLOSING (style §2 block 9 — one ritualized sentence) =====
+% SRC: style §9.10 — copy closing template verbatim
+Once again, [closing ritual sentence]. The authors.
+
+% ===== REFERENCES (style §2 block 7 — letter as free-standing document) =====
+\begin{singlespace}
+    \clearpage
+    \bibliographystyle{mystyle}
+    \bibliography{ref}
+    \clearpage
+\end{singlespace}
+
+% ===== RESPONSE-ONLY EXHIBITS (style §7.5 — R-prefix, separate from manuscript numbering) =====
+% Booktabs, no vertical rules; full caption + notes + t-stats.
+\nothing{\clearpage
+\begin{landscape}
+\begin{center}
+Table R1. [Caption]
+\end{center}
+\begingroup\setstretch{1}\footnotesize
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lccc}
+\toprule
+            & (1)   & (2)   & (3)   \\
+\midrule
+[Variable]  & [coef] & [coef] & [coef] \\
+\bottomrule
+\end{tabular*}
+\endgroup
+[Notes: significance stars, SE clustering, variable definitions.]
+\end{landscape}}
+
+\end{document}

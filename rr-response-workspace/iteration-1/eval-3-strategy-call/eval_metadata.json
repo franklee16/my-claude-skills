@@ -1,0 +1,12 @@
+{
+  "eval_id": 3,
+  "eval_name": "eval-3-strategy-call",
+  "prompt": "Comment 2 says we should 'reconcile or remove' the portfolio-sorting section because our sign contradicts Zhang (2022). Honestly I think Zhang's result doesn't apply to our sample. What should we do here?",
+  "expectations": [
+    "Removal of the portfolio-sorting section is rejected or warned against (cutting the referee's requested reconciliation evidence is identified as a failure move)",
+    "The recommendation prescribes a reconciliation protocol: reduce the disagreement to named specification/measurement axes and replicate Zhang (2022) in his exact specification, then compare",
+    "The user's belief that 'Zhang doesn't apply' is channeled into demonstrated measurement/specification differences - the recommendation never endorses asserting that Zhang is wrong",
+    "The recommendation notes that no reconciliation analysis has been run yet (changelog: Not Started), so either the analysis must run first or the letter needs explicit placeholders",
+    "No letter is drafted - the output is a decision recommendation (the task asked 'what should we do', not for drafting)"
+  ]
+}

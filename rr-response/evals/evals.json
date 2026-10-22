@@ -1,0 +1,60 @@
+{
+  "skill_name": "rr-response",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We just got the decision back from JFQA on my paper 'Retail Attention and the Cross-Section of Stock Returns' — revise and resubmit. The referee report is at C:/Users/frank/.claude/skills/rr-response/evals/fixtures/referee_report_R1.txt, the editor letter at C:/Users/frank/.claude/skills/rr-response/evals/fixtures/editor_letter.txt, and our changelog of what we've actually done so far at C:/Users/frank/.claude/skills/rr-response/evals/fixtures/changelog.md. Help me plan the response and draft the response letter to Referee 1.",
+      "expected_output": "A response plan (triage table with threat coding, move per comment, change-status reconciliation) plus a full Markdown response letter: referee comments verbatim in italics with original numbering; correct protocol per tough comment (Grant-the-Threat anatomy for C1 with premise-testing staged and placeholders/deferred results since liquidity analysis is In-Progress; Replication Grid not removal for C2; direct answer + conjecture adoption + owned smallness for C3); only Completed changelog items carry real pointers/numbers; every decline carries an escape hatch; no forbidden or evaluative-discounting phrasing.",
+      "files": [
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/referee_report_R1.txt",
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/editor_letter.txt",
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/changelog.md"
+      ],
+      "expectations": [
+        "Every referee comment (1, 1a, 2, 3, 4, 5) is reproduced substantially verbatim (>=95% normalized similarity to the fixture text) in italics or blockquote, with the referee's original numbering preserved",
+        "Zero forbidden phrases: no 'respectfully disagree', 'you are wrong', 'with all due respect', or 'referee/reviewer is mistaken' anywhere in the letter",
+        "Zero evaluative-discounting phrasing: nothing that ranks the referee's concerns as unimportant ('not an important concern', 'does not add much value' family)",
+        "Comment 2 is answered with reconciliation (replication/specification comparison), and the portfolio-sorting section is NOT removed or slated for removal",
+        "The Comment 1 response contains NO invented liquidity-analysis results: no coefficients, t-stats, or tables for the Wang (2021) liquidity-provision test beyond what the changelog states (which is: analysis not yet run) - pending work is marked with explicit placeholders or described as planned",
+        "Every Section/page/Table pointer and every number in the letter traces to the changelog/fixtures (Table IA.2, Section 4.3 page 21, footnote 5 page 3, Section 2.1 page 8, page 12 typo) or is an explicit placeholder - no plausible-looking fabricated locations",
+        "Every decline, deferral, or kept-preference decision in the letter carries an escape hatch ('if you prefer' / 'we would be pleased to' family)",
+        "A response-plan artifact exists that codes comments by threat level and names a chosen move/protocol per comment",
+        "The referee's direct question in Comment 3 ('Doesn't this contradict your story?') receives an explicit answering sentence",
+        "Every per-comment response opens with a gratitude/agreement ritual before substance"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The referee's comment 3 on institutional ownership is the one I'm least sure how to handle — the spread is small and the Table 5 subsample result seems to cut against our story. Draft just the response to comment 3 for me. Referee report: C:/Users/frank/.claude/skills/rr-response/evals/fixtures/referee_report_R1.txt; changelog: C:/Users/frank/.claude/skills/rr-response/evals/fixtures/changelog.md.",
+      "expected_output": "A single-comment response with Conjecture-Promotion + Own-the-Smallness anatomy: comment quoted verbatim in italics; explicit direct answer to 'Doesn't this contradict your story?'; the referee's institutional-ownership implication adopted and tested using ONLY the Completed Table IA.2 numbers from the changelog (0.032/t=3.05; interaction −0.011/t=−1.05; subsample spreads 0.44%/t=2.62 vs 0.09%/t=0.71; benchmark 6.8%); smallness conceded with a benchmark the referee did not ban; no frontal disagreement; precise pointer to Table IA.2 / Section 4.3 page 21.",
+      "files": [
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/referee_report_R1.txt",
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/changelog.md"
+      ],
+      "expectations": [
+        "Comment 3 is quoted substantially verbatim in italics/blockquote",
+        "The direct question 'Doesn't this contradict your story?' receives an explicit answering sentence (not merely addressed by implication)",
+        "Every coefficient and t-stat cited matches the changelog exactly (0.032/t=3.05; interaction -0.011/t=-1.05; 0.44%/t=2.62; 0.09%/t=0.71) with NO additional invented numbers",
+        "Smallness of the spread is conceded openly and benchmarked against something the referee did not ban (e.g., the 6.8% mean absolute deviation or the subsample contrast), not concealed or deflected",
+        "No frontal disagreement: zero forbidden phrases; any resistance travels via hedged verbs plus evidence",
+        "The response carries a precise manuscript pointer to the completed work (Table IA.2 / Internet Appendix; Section 4.3, page 21)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Comment 2 says we should 'reconcile or remove' the portfolio-sorting section because our sign contradicts Zhang (2022). Honestly I think Zhang's result doesn't apply to our sample. What should we do here — reconcile, or just remove the section and move on?",
+      "expected_output": "A strategy recommendation (no letter): rejects removal (red line — never cut the referee's requested evidence); rejects frontal attack on Zhang (reframe as a specification/measurement difference, not who is right); prescribes the Replication-Grid protocol (grant named actions, reduce to two specification axes, replicate Zhang in his exact spec, run the grid, hedged synthesis); notes the user's belief 'Zhang doesn't apply' must travel as demonstrated measurement differences, never as assertion; flags that no reconciliation analysis exists yet (Not Started in changelog) so the letter needs placeholders or the analysis needs running first.",
+      "files": [
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/referee_report_R1.txt",
+        "C:/Users/frank/.claude/skills/rr-response/evals/fixtures/changelog.md"
+      ],
+      "expectations": [
+        "Removal of the portfolio-sorting section is rejected or warned against (cutting the referee's requested reconciliation evidence is identified as a failure move)",
+        "The recommendation prescribes a reconciliation protocol: reduce the disagreement to named specification/measurement axes and replicate Zhang (2022) in his exact specification, then compare",
+        "The user's belief that 'Zhang doesn't apply' is channeled into demonstrated measurement/specification differences - the recommendation never endorses asserting that Zhang is wrong",
+        "The recommendation notes that no reconciliation analysis has been run yet (changelog: Not Started), so either the analysis must run first or the letter needs explicit placeholders",
+        "No letter is drafted - the output is a decision recommendation (the task asked 'what should we do', not for drafting)"
+      ]
+    }
+  ]
+}

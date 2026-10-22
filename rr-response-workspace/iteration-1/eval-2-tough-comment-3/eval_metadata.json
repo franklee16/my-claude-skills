@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-tough-comment-3",
+  "prompt": "The referee's comment 3 on institutional ownership is the one I'm least sure how to handle - the spread is small and the Table 5 subsample result seems to cut against our story. Draft just the response to comment 3.",
+  "expectations": [
+    "Comment 3 is quoted substantially verbatim in italics/blockquote",
+    "The direct question 'Doesn't this contradict your story?' receives an explicit answering sentence (not merely addressed by implication)",
+    "Every coefficient and t-stat cited matches the changelog exactly (0.032/t=3.05; interaction -0.011/t=-1.05; 0.44%/t=2.62; 0.09%/t=0.71) with NO additional invented numbers",
+    "Smallness of the spread is conceded openly and benchmarked against something the referee did not ban (e.g., the 6.8% mean absolute deviation or the subsample contrast), not concealed or deflected",
+    "No frontal disagreement: zero forbidden phrases; any resistance travels via hedged verbs plus evidence",
+    "The response carries a precise manuscript pointer to the completed work (Table IA.2 / Internet Appendix; Section 4.3, page 21)"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Comment 3 is quoted substantially verbatim in italics/blockquote",
+      "passed": true,
+      "evidence": "Full comment reproduced as a blockquote in italics: \"> **3.** *Here is what bothers me most. The paper's story is that retail attention drives mispricing. ... Please answer directly, and justify the economic magnitude of your findings.*\" — word-for-word identical to referee_report_R1.txt comment 3 (the '**3.**' prefix is a label); audit 'verbatim comment diff' reports '1 blocks matched (>=0.98)'."
+    },
+    {
+      "text": "The direct question 'Doesn't this contradict your story?' receives an explicit answering sentence (not merely addressed by implication)",
+      "passed": true,
+      "evidence": "\"To answer your question directly: you are reading Table 5 correctly. The long-short spread is statistically indistinguishable from zero in the high-institutional-ownership subsample, and this is the pattern our mechanism predicts.\" — an explicit sentence answering the contradiction question head-on."
+    },
+    {
+      "text": "Every coefficient and t-stat cited matches the changelog exactly (0.032/t=3.05; interaction -0.011/t=-1.05; 0.44%/t=2.62; 0.09%/t=0.71) with NO additional invented numbers",
+      "passed": true,
+      "evidence": "All four pairs exact: \"the baseline ATTN coefficient is 0.032 (t-stat. = 3.05)\"; \"The coefficient on the ATTN × High-IO interaction is −0.011 (t-stat. = −1.05)\"; \"0.44% per month (t-stat. = 2.62) among low-IO stocks\"; \"0.09% per month (t-stat. = 0.71), statistically indistinguishable from zero, among high-IO stocks\". Every other number traced: 31 bps from the referee report fixture; 6.8% MAD from changelog; derived figures shown with inputs and correct — \"roughly 1.4 times the full-sample figure\" (0.44/0.31=1.42) and \"about 6.5% of a typical month's move\" (0.44/6.8=6.47). No other statistics appear; no external or ungrounded numbers."
+    },
+    {
+      "text": "Smallness of the spread is conceded openly and benchmarked against something the referee did not ban (e.g., the 6.8% mean absolute deviation or the subsample contrast), not concealed or deflected",
+      "passed": true,
+      "evidence": "Concession: \"we acknowledge that the full-sample spread of 31 basis points per month is modest in absolute terms.\" MAD benchmark: \"relative to the typical monthly price movement in our sample (the mean absolute deviation of monthly returns is 6.8%), the low-IO spread of 0.44% represents about 6.5% of a typical month's move.\" Subsample contrast also used: \"0.44% per month where retail investors dominate the ownership structure, and 0.09% where institutions do.\" Note: the transaction-cost half is deferred rather than conceded (\"We would be pleased to add an analysis of net-of-cost returns to the paper if you prefer\") — but the spread's smallness itself is conceded and benchmarked as required."
+    },
+    {
+      "text": "No frontal disagreement: zero forbidden phrases; any resistance travels via hedged verbs plus evidence",
+      "passed": true,
+      "evidence": "Audit: 'forbidden phrases' pass, 'evaluative discounting' pass. Text opens with agreement (\"We agree with you that retail investors are less likely to move prices in stocks dominated by institutions...\") and the interpretive claim is hedged with evidence attached: \"This seems to suggest that the predictability of ATTN is concentrated in stocks that retail investors dominate, in line with your conjecture.\" No disagreement constructions anywhere. (The audit's 'gratitude opener: fail' flag is contradicted by the visible text — \"Thank you very much for pointing out this very important issue.\" is present at the top of the response block; appears to be a parser artifact of the trailing <!-- SRC --> HTML comment, not a real omission.)"
+    },
+    {
+      "text": "The response carries a precise manuscript pointer to the completed work (Table IA.2 / Internet Appendix; Section 4.3, page 21)",
+      "passed": true,
+      "evidence": "\"The results are reported in Table IA.2 of the Internet Appendix and discussed in a new paragraph at the end of Section 4.3 (page 21) of the revised manuscript.\" — matches the changelog's completed item exactly. Audit 'pointer per response': pass."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}

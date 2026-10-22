@@ -1,0 +1,56 @@
+[
+  {
+    "check": "forbidden phrases",
+    "severity": "FAIL",
+    "status": "pass",
+    "detail": ""
+  },
+  {
+    "check": "evaluative discounting",
+    "severity": "FAIL",
+    "status": "pass",
+    "detail": ""
+  },
+  {
+    "check": "scope-declaration",
+    "severity": "REVIEW",
+    "status": "pass",
+    "detail": ""
+  },
+  {
+    "check": "placeholders",
+    "severity": "REVIEW",
+    "status": "pass",
+    "detail": ""
+  },
+  {
+    "check": "[P#] tag leakage",
+    "severity": "FAIL",
+    "status": "pass",
+    "detail": ""
+  },
+  {
+    "check": "verbatim comment diff",
+    "severity": "REVIEW",
+    "status": "pass",
+    "detail": "1 blocks matched (>=0.98)"
+  },
+  {
+    "check": "gratitude opener per response",
+    "severity": "REVIEW",
+    "status": "fail",
+    "detail": "missing in response blocks [1]"
+  },
+  {
+    "check": "pointer per response",
+    "severity": "REVIEW",
+    "status": "pass",
+    "detail": "1 blocks OK"
+  },
+  {
+    "check": "escape-hatch heuristic",
+    "severity": "REVIEW",
+    "status": "pass",
+    "detail": "no unmatched declines among 1 blocks"
+  }
+]

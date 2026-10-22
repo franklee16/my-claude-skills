@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Comment 3 is quoted substantially verbatim in italics/blockquote",
+      "passed": true,
+      "evidence": "Full comment reproduced in a blockquote in italics: \"> *Here is what bothers me most. The paper's story is that retail attention drives mispricing. ... Please answer directly, and justify the economic magnitude of your findings.*\" — word-for-word identical to referee_report_R1.txt comment 3; audit 'verbatim comment diff' reports '1 blocks matched (>=0.98)'."
+    },
+    {
+      "text": "The direct question 'Doesn't this contradict your story?' receives an explicit answering sentence (not merely addressed by implication)",
+      "passed": true,
+      "evidence": "Summary opens \"We answer both questions directly.\" and answers: \"First, on Table 5: the pattern the referee describes is the mechanism's own prediction, and the apparent contradiction arises because the previous draft never said so.\" Reinforced explicitly in section heading \"3.1 The institutional-ownership split tests the mechanism, and Table 5 passes the test\" and \"Table 5 delivers the second pattern\"."
+    },
+    {
+      "text": "Every coefficient and t-stat cited matches the changelog exactly (0.032/t=3.05; interaction -0.011/t=-1.05; 0.44%/t=2.62; 0.09%/t=0.71) with NO additional invented numbers",
+      "passed": true,
+      "evidence": "All four pairs exact: \"full-sample ATTN coefficient is 0.032 (t = 3.05)\"; \"ATTN × High-IO interaction is −0.011 (t = −1.05)\"; \"0.44% per month in the low-IO subsample (t = 2.62)\"; \"0.09% per month in the high-IO subsample (top IO tercile, Thomson Reuters 13F; t = 0.71)\". Every other number traced: 0.31%/31 bps from the referee report fixture; 6.8% MAD from changelog; derived figures all shown with inputs and arithmetically correct — 4.6% (0.31/6.8), 6.5% (0.44/6.8), 3.7%/yr (0.31×12), 5.3%/yr (0.44×12), \"factor of nearly five\" (0.44/0.09=4.9). One external-literature benchmark (\"the same order as the long-run average monthly value premium (on the order of 35–40 bps)\") has no artifact basis but is hedged, approximately accurate, and anchored to named references — an external stylized fact, not an invented paper statistic. Citation years (1997, 2004, 2009, 2012, 2016) all check out; Novy-Marx/Velikov venue flagged '[AUTHOR: verify exact title and venue]'."
+    },
+    {
+      "text": "Smallness of the spread is conceded openly and benchmarked against something the referee did not ban (e.g., the 6.8% mean absolute deviation or the subsample contrast), not concealed or deflected",
+      "passed": true,
+      "evidence": "Plain concession on the harder half too: \"the referee is right about trading costs, and we say so plainly. Gross of costs, the full-sample spread is 0.31% per month; net of realistic round-trip and borrow costs at monthly rebalancing, it is not a profitable strategy.\" Benchmarked against MAD (\"The mean absolute deviation of monthly stock returns in the sample is 6.8%. The full-sample spread of 0.31% per month is 4.6% of that MAD; the low-IO spread of 0.44% is 6.5%.\"), the subsample contrast (0.44 vs 0.09, \"factor of nearly five\"), and published anomalies."
+    },
+    {
+      "text": "No frontal disagreement: zero forbidden phrases; any resistance travels via hedged verbs plus evidence",
+      "passed": true,
+      "evidence": "Audit: 'forbidden phrases' pass, 'evaluative discounting' pass, '[P#] tag leakage' pass. Fault is self-attributed, never the referee's: \"the previous draft reported it without its interpretation, and the fault for the misreading is ours.\" Resistance to the contradiction framing travels with hedged reading plus evidence: \"We read Table IA.2 as attenuation consistent with the institutional-arbitrage logic... interaction tests at this split have limited power, and the revised text reports the interaction's t-statistic alongside the subsample estimates.\""
+    },
+    {
+      "text": "The response carries a precise manuscript pointer to the completed work (Table IA.2 / Internet Appendix; Section 4.3, page 21)",
+      "passed": true,
+      "evidence": "\"In the revision we recast the discussion and add Table IA.2 in the Internet Appendix, discussed in a new paragraph at the end of Section 4.3 (page 21)\" — matching the changelog's completed item exactly; repeated at close: \"Both changes are in the revised manuscript: the recast discussion and Table IA.2 at the end of Section 4.3 (page 21)\". Audit 'pointer per response': pass."
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}
